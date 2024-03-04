@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center; /* Centering for the block elements */
+    font-family: 'Fantasy', cursive; /* Using Fantasy font */
+  }
+
+  .main-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Spacing between images */
+  }
+
+  .gallery-item {
+    flex-basis: 30%; /* Initial width of each gallery item */
+    margin-bottom: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .button-container {
+    margin: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff8c00; /* Example button color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #ffa500; /* Darker color on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="main-title">Ways of Remedies</div>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="a-person-doing-meditation.png" alt="Meditation">
+    <div class="title">Meditation</div>
+  </div>
+  <div class="gallery-item">
+    <img src="full-nature.png" alt="Nature">
+    <div class="title">Nature</div>
+  </div>
+  <div class="gallery-item">
+    <img src="tarot-cards-.jpg" alt="Tarot Cards">
+    <div class="title">Tarot Card</div>
+  </div>
+</div>
+
+<div class="button-container">
+  <button onclick="window.history.back()">Go Back</button>
+</div>
+
+</body>
+</html>

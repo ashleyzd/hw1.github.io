@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, white)
+    color: #fff; /* Text color */
+  }
+
+  .welcome-text {
+    font-family: 'Fantasy', cursive; /* Using Fantasy font */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .video-container,
+  .image-container {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+
+  video,
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .button-container {
+    margin: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff8c00; /* Example button color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #ffa500; /* Darker color on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="welcome-text">
+  Welcome to Emotional Remedy Station! <br>At here, you will find a way to get rid of bad moods :)
+</div>
+
+<div class="video-container">
+  <video autoplay muted loop>
+    <source src="emotional remedies,.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="image-container">
+  <img src="emorem.webp" alt="Emotional Remedies Image">
+</div>
+
+<div class="button-container">
+  <button onclick="window.location.href='content.html'">Explore More</button>
+</div>
+
+</body>
+</html>
